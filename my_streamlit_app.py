@@ -17,7 +17,6 @@ if text_input:
     text_vectorized = vectorizer.transform([text_input])
 
     prediction = model.predict(text_vectorized)
-    # عرض نتيجة التنبؤ
     if prediction == 1:
         st.write("Positive: إيجابي")
     elif prediction == -1:
